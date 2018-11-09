@@ -28,7 +28,11 @@
               console.log(aa);
           });
 
- 
+     // get attribute 
+           elements.getAttribute('class').then(function (classes) {
+                   console.log(classes);               
+                  
+                });
     
     
   });
