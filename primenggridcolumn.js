@@ -33,7 +33,17 @@
                    console.log(classes);               
                   
                 });
-    
+    // click on paging
+    var elements = element.all(protractor.By.css('span a'));   
+
+                var cellTexts = elements.map(function (elm) {                
+                elm.getText().then(function(aa){
+                    console.log(aa);
+                    browser.driver.sleep(2000);
+                    element(by.linkText(aa)).click();
+                });                
+            });                
+            browser.driver.sleep(3000);
     
   });
 
