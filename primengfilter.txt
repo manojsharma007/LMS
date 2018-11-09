@@ -5,7 +5,7 @@
     yearFilter: number;
     yearTimeout: any;
   
-  ngOnInit() {
+ ngOnInit() {
     this.cars = 
    [
           {"vin":"a1653d4d","brand":"VW","year":1998,"color":"White","price":10000},
